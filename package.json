@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -13,7 +15,8 @@
     "sass-loader": "^7.1.0",
     "vue": "^2.6.6",
     "vue-cookie": "^1.1.4",
-    "vue-moment": "^4.0.0"
+    "vue-moment": "^4.0.0",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
@@ -47,5 +50,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "snyk": true
 }
